@@ -1,0 +1,22 @@
+nav {
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.list a {
+    text-decoration: none;
+    color: var(--concretegrey);
+}
+
+.list a:visited {
+    color: var(--concretegrey);
+}
