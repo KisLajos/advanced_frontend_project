@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from "./pages/Home.js";
+import Menu from "./pages/Menu.js";
+import Info from "./pages/Info.js";
+import CocktailWorkshops from "./pages/CocktailWorkshops.js";
+import GedulgtPrivate from "./pages/GedulgtPrivate.js";
+import GedulgtDining from "./pages/GedulgtDining.js";
+import NavBar from "./components/NavBar.js";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="menu" element={<Menu />} />
+          <Route path="info" element={<Info />} />
+          <Route path="cocktailworkshops" element={<CocktailWorkshops />} />
+          <Route path="gedulgtprivate" element={<GedulgtPrivate />} />
+          <Route path="gedulgtdining" element={<GedulgtDining />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </main>
+    </>
   );
 }
 
