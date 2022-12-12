@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="25" viewBox="0 0 340 25">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #7f8076;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: #7f8076;
+      }
+    </style>
+  </defs>
+  <g id="Deco_Divider_with_jiggers" data-name="Deco Divider with jiggers" transform="translate(-403 -919)">
+    <line id="Line_1" data-name="Line 1" class="cls-1" x2="150" transform="translate(403 933)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-1" x2="150" transform="translate(593 933)"/>
+    <g id="Polygon_14" data-name="Polygon 14" class="cls-2" transform="translate(566 931)">
+      <path class="cls-3" d="M7,0l7,13H0Z"/>
+      <path class="cls-4" d="M 7 2.109258651733398 L 1.674216270446777 12 L 12.32578372955322 12 L 7 2.109258651733398 M 7 0 L 14 13 L 0 13 L 7 0 Z"/>
+    </g>
+    <g id="Polygon_15" data-name="Polygon 15" class="cls-2" transform="translate(581 940) rotate(180)">
+      <path class="cls-3" d="M8,0l8,21H0Z"/>
+      <path class="cls-4" d="M 7.999999523162842 2.809036254882812 L 1.451061248779297 20 L 14.54893779754639 20 L 7.999999523162842 2.809036254882812 M 7.999999523162842 0 L 16 21 L -9.5367431640625e-07 21 L 7.999999523162842 0 Z"/>
+    </g>
+    <g id="Polygon_16" data-name="Polygon 16" class="cls-2" transform="translate(583 931)">
+      <path class="cls-3" d="M5,0l5,10H0Z"/>
+      <path class="cls-4" d="M 5 2.236070156097412 L 1.618035316467285 9 L 8.381964683532715 9 L 5 2.236070156097412 M 5 0 L 10 10 L 0 10 L 5 0 Z"/>
+    </g>
+    <g id="Polygon_18" data-name="Polygon 18" class="cls-2" transform="translate(553 931)">
+      <path class="cls-3" d="M5,0l5,10H0Z"/>
+      <path class="cls-4" d="M 5 2.236070156097412 L 1.618035316467285 9 L 8.381964683532715 9 L 5 2.236070156097412 M 5 0 L 10 10 L 0 10 L 5 0 Z"/>
+    </g>
+    <g id="Polygon_17" data-name="Polygon 17" class="cls-2" transform="translate(594 938) rotate(180)">
+      <path class="cls-3" d="M6,0l6,16H0Z"/>
+      <path class="cls-4" d="M 6 2.847999572753906 L 1.442999839782715 15 L 10.55700016021729 15 L 6 2.847999572753906 M 6 0 L 12 16 L 0 16 L 6 0 Z"/>
+    </g>
+    <g id="Polygon_19" data-name="Polygon 19" class="cls-2" transform="translate(564 938) rotate(180)">
+      <path class="cls-3" d="M6,0l6,16H0Z"/>
+      <path class="cls-4" d="M 6 2.847999572753906 L 1.442999839782715 15 L 10.55700016021729 15 L 6 2.847999572753906 M 6 0 L 12 16 L 0 16 L 6 0 Z"/>
+    </g>
+  </g>
+</svg>

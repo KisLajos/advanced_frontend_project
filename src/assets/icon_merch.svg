@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="30.459" viewBox="0 0 25 30.459">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #ebe1b0;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="Tote_bag_icon" data-name="Tote bag icon" transform="translate(-632 -763.731)">
+    <path id="Path_12" data-name="Path 12" class="cls-1" d="M1799-674.4c-1.521-7.6-2.906-10.215-4.567-10.444-2.564-.468-4.836,10.444-4.836,10.444Z" transform="translate(-1150 1451)"/>
+    <line id="Line_37" data-name="Line 37" class="cls-2" x1="4" transform="translate(632.5 776.5)"/>
+    <line id="Line_39" data-name="Line 39" class="cls-2" x2="4" transform="translate(652.5 776.5)"/>
+    <path id="Path_15" data-name="Path 15" class="cls-2" d="M0,17l.951-1.5L2,4.017V0" transform="translate(654.5 776.5)"/>
+    <line id="Line_41" data-name="Line 41" class="cls-2" x2="20" transform="translate(634.5 793.5)"/>
+    <path id="Path_14" data-name="Path 14" class="cls-2" d="M1786.5-674.5c8.607-27.551,15.7,0,15.7,0" transform="translate(-1150 1451)"/>
+    <path id="Path_16" data-name="Path 16" class="cls-2" d="M2,17l-.951-1.5L0,4.017V0" transform="translate(632.5 776.5)"/>
+  </g>
+</svg>

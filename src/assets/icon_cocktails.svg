@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.406" height="28.184" viewBox="0 0 17.406 28.184">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #eba937;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+      }
+
+      .cls-2 {
+        stroke-linecap: square;
+      }
+    </style>
+  </defs>
+  <g id="Cocktails_icon" data-name="Cocktails icon" transform="translate(-550.797 -764.816)">
+    <line id="Line_3" data-name="Line 3" class="cls-1" y1="13" transform="translate(559.5 779.5)"/>
+    <line id="Line_4" data-name="Line 4" class="cls-1" x1="8" y2="10" transform="translate(559.5 769.5)"/>
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M0,0,8,10" transform="translate(551.5 769.5)"/>
+    <path id="Path_2" data-name="Path 2" class="cls-1" d="M16,0H0" transform="translate(551.5 769.5)"/>
+    <line id="Line_7" data-name="Line 7" class="cls-1" x2="8" transform="translate(555.5 792.5)"/>
+    <line id="Line_8" data-name="Line 8" class="cls-2" x1="7" y2="12" transform="translate(559.5 765.5)"/>
+  </g>
+</svg>
