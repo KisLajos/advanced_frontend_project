@@ -5,6 +5,7 @@ import Info from "./pages/Info.js";
 import CocktailWorkshops from "./pages/CocktailWorkshops.js";
 import GedulgtPrivate from "./pages/GedulgtPrivate.js";
 import GedulgtDining from "./pages/GedulgtDining.js";
+import Products from "./pages/Products.js";
 import NavBar from "./components/NavBar.js";
 import { Routes, Route, Navigate } from "react-router-dom";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="cocktailworkshops" element={<CocktailWorkshops />} />
           <Route path="gedulgtprivate" element={<GedulgtPrivate />} />
           <Route path="gedulgtdining" element={<GedulgtDining />} />
+          <Route path="products" element={<Products />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </main>
