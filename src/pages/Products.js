@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react";
 import Product from "../components/Product.js";
+import Selector from "../components/Selector.js";
+import NavIcons from "../components/NavIcons.js";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
+  //const current_menu_name = "CHRISTMAS MENU";
+  const current_menu_name = "THE BEGINNING OF THE WORLD";
+
   useEffect(() => {
     async function getData() {
       const response = await fetch(
@@ -19,6 +24,8 @@ export default function Products() {
 
   return (
     <section className="page">
+      <NavIcons/>
+      <Selector current_menu={ current_menu_name }/>
       {products?.length > 0 ? products.map((product) => (
             <Product key={product.id} product={product} />
           )) : "Loading..."}
