@@ -10,10 +10,18 @@ import MerchIcon from "../assets/icon_merch.svg"
 export default function NavIcons() {
   return (
     <div className="navicons">
-      <img src={SnacksIcon}/>
-      <img src={CocktailsIcon}/>
-      <img src={OtherdrinksIcon}/>
-      <img src={MerchIcon}/>
+      <div className="icon-container">
+        <img src={SnacksIcon}/>
+      </div>
+      <div className="icon-container">
+        <img src={CocktailsIcon}/>
+      </div>
+      <div className="icon-container">
+        <img className="otherdrinks-img" src={OtherdrinksIcon}/>
+      </div>
+      <div className="icon-container">
+        <img src={MerchIcon}/>
+      </div>
     </div>
   );
 }

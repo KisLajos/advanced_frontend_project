@@ -5,7 +5,23 @@
     gap: 1rem;
 }
 
-.navicons img {
-    padding: 0.3rem;
+.icon-container {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     border: 1px solid var(--concretegrey);
+    border-radius: 0.3rem;
+}
+
+.otherdrinks-img {
+    padding-left: 0.3rem;
+}
+
+.icon-container img {
+    scale: 1.2;
 }
