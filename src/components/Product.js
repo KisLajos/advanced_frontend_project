@@ -22,7 +22,7 @@ export default function Product({ product }) {
         <h3 className="product-name">{parse(product.title.rendered)}</h3>
 
         <h5 className="product-ingredients">{product.acf.ingredients}</h5>
-        <p>{product.acf.price},-</p>
+        <p className="product-price">{product.acf.price},-</p>
         <p className="product-description">{product.acf.description}</p>
         <p>{product.acf.comments}</p>
         <p>{product.acf.shown}</p>
