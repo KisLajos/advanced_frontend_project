@@ -9,9 +9,9 @@ export default function Selector({ current_menu }) {
   return (
     <div className="selector-container">
         <div className="selector">
-            <img className="leftarrow" src={LeftArrow} />
+            <img className="leftarrow" alt="Left arrow" src={LeftArrow} />
                 <p className="selector_text">{current_menu}</p>
-            <img className="rightarrow" src={RightArrow} />
+            <img className="rightarrow" alt="Right arrow" src={RightArrow} />
         </div>
     </div>
   );

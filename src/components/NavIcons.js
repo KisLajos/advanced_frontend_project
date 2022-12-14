@@ -11,16 +11,16 @@ export default function NavIcons() {
   return (
     <div className="navicons">
       <div className="icon-container">
-        <img src={SnacksIcon}/>
+        <img alt="Snacks" src={SnacksIcon}/>
       </div>
       <div className="icon-container">
-        <img src={CocktailsIcon}/>
+        <img alt="Cocktails" src={CocktailsIcon}/>
       </div>
       <div className="icon-container">
-        <img className="otherdrinks-img" src={OtherdrinksIcon}/>
+        <img className="otherdrinks-img" alt="Other drinks" src={OtherdrinksIcon}/>
       </div>
       <div className="icon-container">
-        <img src={MerchIcon}/>
+        <img alt="Merchandise" src={MerchIcon}/>
       </div>
     </div>
   );
