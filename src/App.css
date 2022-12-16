@@ -28,3 +28,9 @@ html, body {
   max-width: 20rem;
   padding: 0.5rem;
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

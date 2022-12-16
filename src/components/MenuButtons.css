@@ -1,0 +1,53 @@
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "grid-icon grid-text grid-arrow";
+    width: 12rem;
+    padding: 0.5rem;
+    border: 1px solid var(--concretegrey);
+    border-radius: 0.3rem;
+}
+
+.button-container-two-slots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 12rem;
+    padding: 0.5rem;
+    border: 1px solid var(--concretegrey);
+    border-radius: 0.3rem;
+    color: var(--concretegrey);
+    text-decoration: none;
+}
+
+.grid-icon { 
+    grid-area: grid-icon; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-text { 
+    grid-area: grid-text; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.grid-arrow { 
+    grid-area: grid-arrow; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
