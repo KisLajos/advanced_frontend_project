@@ -9,7 +9,7 @@ export default function Products() {
   const current_menu_name = "THE BEGINNING OF THE WORLD";
 
   useEffect(() => {
-    async function getData() {
+    async function getProducts() {
       const response = await fetch(
         "https://wordpress.lajoskis.dk/wp-json/wp/v2/products?_embed"
       );
@@ -19,7 +19,7 @@ export default function Products() {
         setProducts(data);
       }
     }
-    getData();
+    getProducts();
   }, []);
 
   return (
