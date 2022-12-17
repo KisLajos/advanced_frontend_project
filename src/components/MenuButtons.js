@@ -6,13 +6,13 @@ import CocktailsIcon from "../assets/icon_cocktails.svg"
 import OtherdrinksIcon from "../assets/icon_otherdrinks.svg"
 import MerchIcon from "../assets/icon_merch.svg"
 
-export default function MenuButtons() {
+export default function MenuButtons( categories ) {
   return (
     <div className="menu-buttons">
-      <MenuButton linksto="/products" imgsrc={SnacksIcon} text='Snacks' />
-      <DropdownButton imgsrc={CocktailsIcon} text='Cocktails' />
-      <DropdownButton imgsrc={OtherdrinksIcon} text='Other Drinks' />
-      <MenuButton linksto="/products" imgsrc={MerchIcon} text='Merchandise' />
+      <MenuButton mainmenu={true} linksto="/products/snacks" imgsrc={SnacksIcon} text='Snacks' />
+      <DropdownButton imgsrc={CocktailsIcon} categories={categories} text='Cocktails' type="cocktails"/>
+      <DropdownButton imgsrc={OtherdrinksIcon} categories={categories} text='Other Drinks' type="otherdrinks"/>
+      <MenuButton mainmenu={true} linksto="/products/merchandise" imgsrc={MerchIcon} text='Merchandise' />
     </div>
   );
 }

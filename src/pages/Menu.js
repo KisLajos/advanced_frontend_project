@@ -4,21 +4,21 @@ import Logo from "../assets/logo_transparent.png";
 import "./Menu.css";
 import { Link } from "react-router-dom";
 
-export default function Menu() {
-  const [menus, setMenus] = useState([]);
+export default function Category() {
+  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    async function getMenus() {
+    async function getCategories() {
       const response = await fetch(
         "https://wordpress.lajoskis.dk/wp-json/wp/v2/categories"
       );
       const data = await response.json();
       console.log(data);
       if (data.data?.status !== 404) {
-        setMenus(data);
+        setCategories(data);
       }
     }
-    getMenus();
+    getCategories();
   }, []);
 
   return (
@@ -32,7 +32,7 @@ export default function Menu() {
       hemmelighedsfuld. Feilb. jf.: jeg kan ikke blive klog paa den Dreng, han
       gaaer saa gedulgt af med Alting.Baud.HS.178.
       <Link to ="/products">Products</Link>
-      <MenuButtons menus={menus} />
+      <MenuButtons categories={categories} />
     </div>
   );
 }
