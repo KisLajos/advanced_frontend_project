@@ -46,7 +46,7 @@ export default function DropdownButton( props ) {
                     key={category.id}
                     linksto={
                       "/products/" +
-                      category.slug.substring(category.slug.indexOf("-") + 1)
+                      category.id
                     }
                     text={parse(category.name)}
                   />
