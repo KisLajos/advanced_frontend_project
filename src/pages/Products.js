@@ -2,11 +2,21 @@ import { useEffect, useState } from "react";
 import Product from "../components/Product.js";
 import Selector from "../components/Selector.js";
 import NavIcons from "../components/NavIcons.js";
+import { useParams } from "react-router-dom";
 
-export default function Products() {
+export default function Products( props ) {
+  let params = useParams();
+  let paramId = parseInt(params.categoryId);
+  let categories = props.categories;
   const [products, setProducts] = useState([]);
-  //const current_menu_name = "CHRISTMAS MENU";
-  const current_menu_name = "THE BEGINNING OF THE WORLD";
+  let current_menu_name = "";
+
+  categories.forEach(category => {
+    console.log(category.id, paramId);
+      if (category.id === paramId) {
+        current_menu_name = category.name;
+      }
+  });
 
   useEffect(() => {
     async function getProducts() {

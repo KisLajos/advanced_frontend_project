@@ -15,6 +15,7 @@
 .selector_text {
     width: 15rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .leftarrow {
