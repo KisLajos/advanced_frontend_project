@@ -5,15 +5,20 @@ import parse from "html-react-parser";
 import "./Selector.css";
 import LeftArrow from "../assets/left_arrow.svg";
 import RightArrow from "../assets/right_arrow.svg";
+import { NavLink } from "react-router-dom";
 
-export default function Selector({ current_menu }) {
+export default function Selector({ current_menu, prevpageId, nextpageId }) {
   return (
     <div className="selector-container">
-        <div className="selector">
-            <img className="leftarrow" alt="Left arrow" src={LeftArrow} />
-                <p className="selector_text">{parse(current_menu)}</p>
-            <img className="rightarrow" alt="Right arrow" src={RightArrow} />
-        </div>
+      <div className="selector">
+        <NavLink to={`/products/${prevpageId}`}>
+          <img className="leftarrow" alt="Left arrow" src={LeftArrow} />
+        </NavLink>
+        <p className="selector_text">{parse(current_menu)}</p>
+        <NavLink to={`/products/${nextpageId}`}>
+          <img className="rightarrow" alt="Right arrow" src={RightArrow} />
+        </NavLink>
+      </div>
     </div>
   );
 }
