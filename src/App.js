@@ -22,6 +22,7 @@ function App() {
           <Route path="gedulgtprivate" element={<GedulgtPrivate />} />
           <Route path="gedulgtdining" element={<GedulgtDining />} />
           <Route path="products" element={<Products />} />
+          <Route path="products/*" element={<Products />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </main>
