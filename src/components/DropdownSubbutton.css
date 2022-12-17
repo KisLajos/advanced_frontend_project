@@ -1,0 +1,22 @@
+.subbuttons-container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.subbutton-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    gap: 0.5rem;
+    color: var(--concretegrey);
+    font-size: 0.9rem;
+}
+
+.openAnim {
+    animation: fade-in 500ms forwards;
+}
+
+.closeAnim {
+    animation: fade-out 500ms forwards;
+}
