@@ -37,6 +37,10 @@ export default function Nav() {
 
   return (
     <nav className={"navbar " + height}>
+      <span onClick={toggleNavbar} className="btn">
+        {toggleMenu ? "Close" : "> Gedulgt"}
+      </span>
+
       {(toggleMenu || screenWidth > 768) && (
         <ul className="list">
           <li>
@@ -65,10 +69,6 @@ export default function Nav() {
           </li>
         </ul>
       )}
-
-      <span onClick={toggleNavbar} className="btn">
-        {/* {toggleMenu ? <MdClose /> : <MdMenu />} */}
-      </span>
     </nav>
   );
 }
