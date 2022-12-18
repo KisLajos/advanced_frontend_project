@@ -9,24 +9,23 @@ import MerchIcon from "../assets/icon_merch.svg"
 import { NavLink } from "react-router-dom";
 
 export default function NavIcons( props ) {
-  console.log(props.removeIcon);
+  console.log(props.selectedIcon);
+  const selectedId = props.selectedIconId;
 
   return (
     <div className="navicons">
-      { props.removeIcon !== 'snacks' &&
-      <div className="icon-container">
+      <div className={`icon-container${selectedId === 18 ? " selected-icon-container active-animation" : ""}`}>
         <NavLink to="/products/18"><img alt="Snacks" src={SnacksIcon}/></NavLink>
-      </div> }
-      <div className="icon-container">
+      </div>
+      <div className={`icon-container${selectedId === 11 ? " selected-icon-container active-animation" : ""}`}>
         <NavLink to="/products/11"><img alt="Cocktails" src={CocktailsIcon}/></NavLink>
       </div>
-      <div className="icon-container">
+      <div className={`icon-container${selectedId === 22 ? " selected-icon-container active-animation" : ""}`}>
         <NavLink to="/products/22"><img className="otherdrinks-img" alt="Other drinks" src={OtherdrinksIcon}/></NavLink>
       </div>
-      { props.removeIcon !== "merchandise" && 
-      <div className="icon-container">
+      <div className={`icon-container${selectedId === 19 ? " selected-icon-container active-animation" : ""}`}>
         <NavLink to="/products/19"><img alt="Merchandise" src={MerchIcon}/></NavLink>
-      </div>}
+      </div>
     </div>
   );
 }

@@ -48,18 +48,11 @@ export default function Products( props ) {
     getProducts();
   }, []);
 
-  let removeIcon = "";
-  if (paramId === 18) {
-    removeIcon = "snacks";
-  }
-  if (paramId === 19 ) {
-    removeIcon = "merchandise";
-  }
-
   return (
     <section className="page">
-      <NavIcons removeIcon={removeIcon}/>
-      <Selector current_menu={ current_menu_name } prevpageId={11} nextpageId={13}/>
+      <NavIcons selectedIconId={paramId}/>
+      { paramId === 18 || paramId === 19 ? "" : <Selector current_menu={ current_menu_name } prevpageId={11} nextpageId={13}/>}
+      
       {products?.length > 0 ? products.map((product) => (
             <Product key={product.id} product={product} />
           )) : "Loading..."}
