@@ -9,10 +9,10 @@ import MerchIcon from "../assets/icon_merch.svg"
 export default function MenuButtons( categories ) {
   return (
     <div className="menu-buttons">
-      <MenuButton mainmenu={true} linksto="/products/snacks" imgsrc={SnacksIcon} text='Snacks' />
+      <MenuButton mainmenu={true} linksto="/products/18" imgsrc={SnacksIcon} text='Snacks' />
       <DropdownButton imgsrc={CocktailsIcon} categories={categories} text='Cocktails' type="cocktails"/>
       <DropdownButton imgsrc={OtherdrinksIcon} categories={categories} text='Other Drinks' type="otherdrinks"/>
-      <MenuButton mainmenu={true} linksto="/products/merchandise" imgsrc={MerchIcon} text='Merchandise' />
+      <MenuButton mainmenu={true} linksto="/products/19" imgsrc={MerchIcon} text='Merchandise' />
     </div>
   );
 }
