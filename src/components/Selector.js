@@ -6,10 +6,11 @@ import "./Selector.css";
 import LeftArrow from "../assets/left_arrow.svg";
 import RightArrow from "../assets/right_arrow.svg";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Selector({ current_menu, prevpageId, nextpageId }) {
   return (
-    <div className="selector-container">
+    <motion.div initial={{opacity: 0, scale: 0, y: -50}} animate={{opacity: 1, scale: 1, y: 0}} className="selector-container">
       <div className="selector">
         <NavLink to={`/products/${prevpageId}`}>
           <img className="leftarrow" alt="Left arrow" src={LeftArrow} />
@@ -19,6 +20,6 @@ export default function Selector({ current_menu, prevpageId, nextpageId }) {
           <img className="rightarrow" alt="Right arrow" src={RightArrow} />
         </NavLink>
       </div>
-    </div>
+    </motion.div>
   );
 }
