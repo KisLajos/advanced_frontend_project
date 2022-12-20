@@ -21,15 +21,19 @@ export default function Category() {
   }, []);
 
   return (
-    <div>
+    <div className="menupage">
       <div className="logo-container">
         <img src={Logo} alt="Gedulgt" className="logo" />
       </div>
-      [geˈdulˀd] 1) (l. br.) skjult; gemt; dulgt (3.1). Sæd og Høst.(1905).196.
+      <div className="menu-definition">
+      <p>[geˈdulˀd]</p>
+      <p>1) (l. br.) skjult; gemt; dulgt (3.1). Sæd og Høst.(1905).196.
       i forb. holde noget gedulgt: vi (maatte) holde voris Elskov gedulgt, og
-      icke tales ved derom uden om Natten. 2) (især jy.) om person:
+      icke tales ved derom uden om Natten.</p>
+      <p> 2) (især jy.) om person:
       hemmelighedsfuld. Feilb. jf.: jeg kan ikke blive klog paa den Dreng, han
-      gaaer saa gedulgt af med Alting.Baud.HS.178.
+      gaaer saa gedulgt af med Alting.Baud.HS.178.</p>
+      </div>
       
       <MenuButtons categories={categories} />
     </div>
