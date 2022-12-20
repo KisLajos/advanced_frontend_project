@@ -4,7 +4,7 @@ import Selector from "../components/Selector.js";
 import NavIcons from "../components/NavIcons.js";
 import { useParams } from "react-router-dom";
 
-export default function Products( props ) {
+export default function Products(props) {
   let params = useParams();
   let paramId = parseInt(params.categoryId);
   let categories = props.categories;
@@ -14,25 +14,25 @@ export default function Products( props ) {
   let possiblepageIdsforotherdrinks = [];
   let product_type = "";
 
-  categories.forEach(category => {
+  categories.forEach((category) => {
     //console.log(category, paramId);
-      if (category.id === paramId) {
-        product_type = category.slug.split("-")[0];
-        console.log(product_type);
-        current_menu_name = category.name;
-      }
-      
-      if (product_type === 'cocktails') {
-        possiblepageIdsforcocktails.push(category.id);
-      }
+    if (category.id === paramId) {
+      product_type = category.slug.split("-")[0];
+      console.log(product_type);
+      current_menu_name = category.name;
+    }
 
-      if (product_type === 'otherdrinks') {
-        possiblepageIdsforotherdrinks.push(category.id);
-      }
+    if (product_type === "cocktails") {
+      possiblepageIdsforcocktails.push(category.id);
+    }
+
+    if (product_type === "otherdrinks") {
+      possiblepageIdsforotherdrinks.push(category.id);
+    }
   });
 
-  console.log(possiblepageIdsforcocktails)
-  console.log(possiblepageIdsforotherdrinks)
+  console.log(possiblepageIdsforcocktails);
+  console.log(possiblepageIdsforotherdrinks);
 
   useEffect(() => {
     async function getProducts() {
@@ -50,12 +50,22 @@ export default function Products( props ) {
 
   return (
     <section className="page">
-      <NavIcons selectedIconId={paramId}/>
-      { paramId === 18 || paramId === 19 ? "" : <Selector current_menu={ current_menu_name } prevpageId={11} nextpageId={13}/>}
-      
-      {products?.length > 0 ? products.map((product) => (
+      <NavIcons selectedIconId={paramId} />
+      {paramId === 18 || paramId === 19 ? (
+        ""
+      ) : (
+        <Selector
+          current_menu={current_menu_name}
+          prevpageId={11}
+          nextpageId={13}
+        />
+      )}
+
+      {products?.length > 0
+        ? products.map((product) => (
             <Product key={product.id} product={product} />
-          )) : "Loading..."}
+          ))
+        : "Loading..."}
     </section>
   );
 }
