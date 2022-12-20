@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import MenuButtons from "../components/MenuButtons.js";
 import Logo from "../assets/logo_transparent.png";
 import "./Menu.css";
-import { Link } from "react-router-dom";
 
 export default function Category() {
   const [categories, setCategories] = useState([]);
@@ -31,7 +30,7 @@ export default function Category() {
       icke tales ved derom uden om Natten. 2) (især jy.) om person:
       hemmelighedsfuld. Feilb. jf.: jeg kan ikke blive klog paa den Dreng, han
       gaaer saa gedulgt af med Alting.Baud.HS.178.
-      <Link to ="/products">Products</Link>
+      
       <MenuButtons categories={categories} />
     </div>
   );
