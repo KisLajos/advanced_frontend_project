@@ -11,16 +11,9 @@ export default function DropdownButton( props ) {
   const [open, setOpen] = useState(false);
   const categories = props.categories.categories;
   const current_category = props.type;
-  const [showSubbutton, setShowSubbutton] = useState(false);
-  const [className, setClassName] = useState("");
 
   const handleOpen = () => {
     setOpen(!open);
-    if (open) {
-      setShowSubbutton(open);
-    }
-
-    setClassName(open ? "openAnim" : "closeAnim");
   };
 
   return (
@@ -41,8 +34,6 @@ export default function DropdownButton( props ) {
             ? categories.map((category) =>
                 category.slug.split("-")[0] === current_category ? (
                   <DropdownSubbutton
-                    className={className}
-                    onClose={setShowSubbutton}
                     key={category.id}
                     linksto={
                       "/products/" +

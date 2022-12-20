@@ -6,11 +6,11 @@ import "./DropdownSubbutton.css";
 import { motion } from "framer-motion";
 
 export default function DropdownSubbutton(props) {
-  const subbuttonRef = useRef();
-  const onClose = props.onClose;
-  const className = props.className;
+  //const subbuttonRef = useRef();
+  //const onClose = props.onClose;
+  //const className = props.className;
 
-  useEffect(() => {
+ /*  useEffect(() => {
     subbuttonRef.current.addEventListener(
       "animationend",
       () => {
@@ -20,10 +20,10 @@ export default function DropdownSubbutton(props) {
       },
       { once: true }
     );
-  }, [className, onClose]);
+  }, [className, onClose]); */
 
   return (
-    <motion.div initial={{opacity: 0, scale: 0, x: -50}} animate={{opacity: 1, scale: 1, x: 0}} exit={{opacity: 0}} ref={subbuttonRef} className={`subbuttons-container ${className}`}>
+    <motion.div initial={{opacity: 0, scale: 0, x: -50}} animate={{opacity: 1, scale: 1, x: 0}} exit={{opacity: 0}} /* s */ className={`subbuttons-container`}>
         
       
       <a href={props.linksto} className="subbutton-container">
