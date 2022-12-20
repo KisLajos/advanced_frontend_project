@@ -1,77 +1,113 @@
 // Contains information about the Gedulgt dining service
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Divider from '../components/Divider'
+import Footer from '../components/Footer'
+import "./GedulgtDining.css";
 
 export default function GedulgtDining() {
-  return (
-    <div>GEDULGT DINING
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-    Minimum 30 persons & maximum 65 persons
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", changeWidth);
+
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
+
+  return (
+    <div className='dining'>
+      
+    <h1 className='dining-text-main-title'>GEDULGT DINING</h1>
+
+    <p>Minimum 30 persons & maximum 65 persons</p>
     
-    (If you are more than 65 persons please reach out to us to explore your options)
+    <p>(If you are more than 65 persons please reach out to us to explore your options)</p>
+
+    <Divider/>
     
-    DINNER & COCKTAILS
+    <div className='dining-table'>
+    <div className='dining-left-side'>
+    <p className='dining-text-title'>DINNER & COCKTAILS</p>
     
-    18.00-23.00
+    <p>18.00-23.00</p>
     
-    3 COURSE DINNER 
+    <p>3 COURSE DINNER </p>
     
-    & 
+    <p>& </p>
     
-    3 COCKTAIL PAIRINGS
+    <p>3 COCKTAIL PAIRINGS</p>
     
-    IN COLLABORATION WITH  CHEF CHRISTIAN BØJLUND
+    <p>IN COLLABORATION WITH  CHEF CHRISTIAN BØJLUND</p>
     
-    EVENING PROGRAM
+    <p className='dining-text-bold'>EVENING PROGRAM</p>
     
-        WELCOME COCKTAIL
+    <p>WELCOME COCKTAIL</p>
     
-        3 COURSE DINNER & 3 COCKTAIL PAIRINGS
+    <p>3 COURSE DINNER & 3 COCKTAIL PAIRINGS</p>
     
-        + DRAFT BEER & WINE DURING DINNER
+    <p>+ DRAFT BEER & WINE DURING DINNER</p>
     
-        COCKTAILS, DRAFT BEER & WINE AFTER DINNER
+    <p>COCKTAILS, DRAFT BEER & WINE AFTER DINNER</p>
     
-    995,- pr. person
+    <p className="dining-price">995,- pr. person</p>
+    </div>
+        
+    {screenWidth < 580 && <Divider />}
+
+    <div className='dining-right-side'>
+    <p className='dining-text-title'>DINNER & COCKTAILS ALL NIGHT</p>
     
-    DINNER & COCKTAILS ALL NIGHT
+    <p>19.00-02.00</p>
     
-    19.00-02.00
+    <p>3 COURSE DINNER </p>
     
-    3 COURSE DINNER 
+    <p>& </p>
     
-    & 
+    <p>3 COCKTAIL PAIRINGS </p>
     
-    3 COCKTAIL PAIRINGS 
+    <p>IN COLLABORATION WITH  CHEF CHRISTIAN BØJLUND</p>
     
-    IN COLLABORATION WITH  CHEF CHRISTIAN BØJLUND
+    <p className='dining-text-bold'>EVENING PROGRAM</p>
     
-    EVENING PROGRAM
+    <p>WELCOME COCKTAIL</p>
     
-        WELCOME COCKTAIL
+    <p>3 COURSE DINNER & 3 COCKTAIL PAIRING</p>
     
-        3 COURSE DINNER & 3 COCKTAIL PAIRING
+    <p>+ DRAFT BEER & WINE DURING DINNER</p>
     
-        + DRAFT BEER & WINE DURING DINNER
+    <p>COCKTAILS, DRAFT BEER & WINE AFTER DINNER</p>
     
-        COCKTAILS, DRAFT BEER & WINE AFTER DINNER
+    <p className="dining-price">1195.- pr. person</p>
+    </div>
+    </div>
     
-    1195.- pr. person
+    <Divider/>
+
+    <p className='dining-text-title'>BOOKING</p>
     
-    BOOKING
+    <p>EMAIL: </p>
     
-    EMAIL: 
+    <a href='mailto:aarhus@gedulgt.dk'>AARHUS@GEDULGT.DK</a>
     
-    AARHUS@GEDULGT.DK
+    <Divider/>
+
+    <div className='dining-fine-print'>
+    <p className='dining-text-white'>THE FINE PRINT:</p>
     
+    <p>Cancellation of Gedulgt Dining, must be done at the latest of 14 days before the scheduled event. </p>
     
-    THE FINE PRINT:
+    <p>Without any timely cancellation, we reserve the right to send an invoice with 25% of the total amount of the arrangement. </p>
     
-    Cancellation of Gedulgt Dining, must be done at the latest of 14 days before the scheduled event. 
-    
-    Without any timely cancellation, we reserve the right to send an invoice with 25% of the total amount of the arrangement. 
-    
-    The prices is per person in Danish currency including vat. 
+    <p>The prices is per person in Danish currency including vat. </p>
+    </div>
+
+    <Footer/>
     </div>
   )
 }

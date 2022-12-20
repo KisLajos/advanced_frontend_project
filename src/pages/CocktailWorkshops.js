@@ -1,95 +1,102 @@
 // Contains info about the cocktail workshops
 
 import React from 'react'
+import Divider from '../components/Divider'
+import Footer from '../components/Footer'
+import "./CocktailWorkshops.css";
 
 export default function CocktailWorkshops() {
   return (
-    <div>
-    COCKTAIL WORKSHOP
+    <div className='workshop'>
+    <p className='workshop-text-title'>COCKTAIL WORKSHOP</p>
     
-    _
+     <p className='workshop-text-bold'>INCLUDING:</p> 
     
-     INCLUDING: 
+    <p>1 WELCOME COCKTAIL</p>
     
-    1 WELCOME COCKTAIL
+    <p>2 TAUGHT COCKTAILS BEHIND THE BAR</p>
     
-    2 TAUGHT COCKTAILS BEHIND THE BAR
+    <p>IN TOTAL OF 3 COCKTAILS</p>
     
-    IN TOTAL OF 3 COCKTAILS
+    <p>PRICE 345,- PR PERSON</p>
     
-    PRICE 345,- PR PERSON
+    <p className='workshop-cocktails-note'>WE HAVE A SELECTION OF 6 DIFFERENT COCKTAILS YOU CAN LEARN, WHICH IS A MIX OF GEDULGT SIGNATURE COCKTAILS AND CLASSIC COCKTAILS</p>
     
-    WE HAVE A SELECTION OF 6 DIFFERENT COCKTAILS YOU CAN LEARN, WHICH IS A MIX OF GEDULGT SIGNATURE COCKTAILS AND CLASSIC COCKTAILS
+    <Divider/>
+
     
-    -
+    <p className='workshop-text-bold'>CAN BE ARRANGED:</p>
     
-    CAN BE ARRANGED:
+    <p>THURSDAY: START BETWEEN 18:00 - 18:30</p>
     
-    THURSDAY: START BETWEEN 18:00 - 18:30
+    <p>FRIDAY & SATURDAY:  START BETWEEN 16.00 - 18.00</p>
     
-    FRIDAY & SATURDAY:  START BETWEEN 16.00 - 18.00
+    <p className='workshop-cocktails-arrangement-note'>(If you are interested in having a workshop on another week day, please reach out to us to explore your options) </p>
     
-    (If you are interested in having a workshop on another week day, please reach out to us to explore your options) 
+    <Divider/>
     
-    -
+     <p className='workshop-text-bold'>BOOKING:</p>
     
-     BOOKING:
+    <p>MINIMUM 6 PERSONS THURSDAY</p>
     
-    MINIMUM 6 PERSONS THURSDAY
+    <p>MINIMUM 8 PERSONS FRIDAY & SATURDAY</p>
     
-    MINIMUM 8 PERSONS FRIDAY & SATURDAY
+    <p>RESERVATIONS CAN BE MADE THROUGH OUR <div className='workshop-button-container'><a className="workshop-button"href="https://gedulgt.superbexperience.com">BOOKING SYSTEM</a></div></p>
     
-    RESERVATIONS CAN BE MADE THROUGH OUR BOOKINGSYSTEM
+    <p>IF YOU ARE LESS THAN 6 PERSONS YOU CAN BOOK A SPOT FOR OUR PUBLIC COCKTAIL WORKSHOPS THROUGH <div className='workshop-button-container'><a className='workshop-button' href='https://duglemmerdetaldrig.dk/oplev/cocktailkursus-gedulgt'>TRUESTORY</a></div></p>
     
-    IF YOU ARE LESS THAN 6 PERSONS YOU CAN BOOK A SPOT FOR OUR PUBLIC COCKTAIL WORKSHOPS THROUGH TRUESTORY
+    <Divider/>
+
+    <p className='workshop-text-title'>COCKTAIL WORKSHOP & SNACKS</p>
     
-    COCKTAIL WORKSHOP & SNACKS
+    <p className='workshop-text-bold'>INCLUDING: </p>
     
-    -
+    <p>1 WELCOME COCKTAIL</p>
     
-    INCLUDING: 
+    <p>2 TAUGHT COCKTAILS BEHIND THE BAR</p>
     
-    1 WELCOME COCKTAIL
+    <p>IN TOTAL OF 3 COCKTAILS</p>
     
-    2 TAUGHT COCKTAILS BEHIND THE BAR
+    <p>GASTRO CHIPS & GASTRO CRACKLINGS W. HERBAL MAYO</p>
     
-    IN TOTAL OF 3 COCKTAILS
+    <p>PRICE 395,- PR PERSON</p>
     
-    GASTRO CHIPS & GASTRO CRACKLINGS W. HERBAL MAYO
+    <p>WE HAVE A SELECTION OF 6 DIFFERENT COCKTAILS YOU CAN LEARN, WHICH IS A MIX OF GEDULGT SIGNATUR COCKTAILS AND CLASSIC COCKTAILS</p>
     
-    PRICE 395,- PR PERSON
+    <Divider/>
     
-    WE HAVE A SELECTION OF 6 DIFFERENT COCKTAILS YOU CAN LEARN, WHICH IS A MIX OF GEDULGT SIGNATUR COCKTAILS AND CLASSIC COCKTAILS
+    <p className='workshop-text-bold'>CAN ONLY BE ARRANGED:</p>
     
-    -
+    <p>THURSDAY: START BETWEEN 18:00 - 18:30</p>
     
-    CAN ONLY BE ARRANGED:
+    <p>FRIDAY & SATURDAY:  START BETWEEN 16.00 - 18.00</p>
     
-    THURSDAY: START BETWEEN 18:00 - 18:30
+    <p className='workshop-cocktails-and-snacks-note'>(If you are interested in having a workshop on another week day, please reach out to us to explore your options) </p>
     
-    FRIDAY & SATURDAY:  START BETWEEN 16.00 - 18.00
+    <Divider/>
     
-    (If you are interested in having a workshop on another week day, please reach out to us to explore your options) 
+    <p className='workshop-text-bold'>BOOKING</p>
     
-    -
+    <p>MINIMUM 6 PERSONS THURSDAY</p>
     
-    BOOKING
+    <p>MINIMUM 8 PERSONS FRIDAY & SATURDAY</p>
     
-    MINIMUM 6 PERSONS THURSDAY
+    <p>RESERVATIONS CAN BE MADE THROUGH OUR <div className='workshop-button-container'><a className="workshop-button" href="https://gedulgt.superbexperince.com">BOOKING SYSTEM</a></div></p>
     
-    MINIMUM 8 PERSONS FRIDAY & SATURDAY
+    <p>IF YOU HAVE ANY FURTHER QUESTIONS PLEASE SEND AN E-MAIL TO <div className='workshop-button-container'><a className="workshop-button" href='mailto:aarhus@gedulgt.dk'>AARHUS@GEDULGT.DK</a></div></p>
     
-    RESERVATIONS CAN BE MADE THROUGH OUR BOOKINGSYSTEM
+    <Divider/>
+
+    <div className='workshops-fine-print'>
+    <p className='workshop-text-white'>THE FINE PRINT:</p>
     
-    IF YOU HAVE ANY FURTHER QUESTIONS PLEASE SEND AN E-MAIL TO AARHUS@GEDULGT.DK
+    <p>Cancellation of The Gedulgt Cocktail Workshops, must be done at the latest of <span className='workshop-text-bold'>48 hours</span> before the scheduled event. </p>
     
-    THE FINE PRINT:
+    <p>Without any timely cancellation, we reserve the right to send an invoice with 25% of the total amount of the arrangement. </p>
     
-    Cancellation of The Gedulgt Cocktail Workshops, must be done at the latest of 48 hours before the scheduled event. 
-    
-    Without any timely cancellation, we reserve the right to send an invoice with 25% of the total amount of the arrangement. 
-    
-    The prices is per person in Danish currency including vat. 
+    <p>The prices is per person in Danish currency including VAT. </p>
+    </div>
+    <Footer/>
     </div>
   )
 }

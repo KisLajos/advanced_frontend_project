@@ -1,59 +1,75 @@
 // Contains information about the Gedulgt catering service
 
 import React from 'react'
+import Divider from '../components/Divider'
+import Footer from '../components/Footer'
+import "./GedulgtPrivate.css";
 
 export default function GedulgtPrivate() {
   return (
-    <div>
-    GEDULGT PRIVATE
+    <div className='gedulgtpriv'>
+    <p className='gedulgtpriv-text-white'>GEDULGT PRIVATE</p>
     
-    COCKTAIL CATERING AT YOUR PRIVATE EVENT
-    PRIVATE Menu
+    <p>COCKTAIL CATERING AT YOUR PRIVATE EVENT</p>
     
-    American Beauty
+    <Divider/>
+
+    <p className='gedulgtpriv-text-bold'>PRIVATE MENU</p>
     
-    Pop Pop Popcorn 
+    <p>American Beauty</p>
     
-    Can-Can 
+    <p>Pop Pop Popcorn </p>
     
-    Gin & Tonic
+    <p>Can-Can </p>
     
-    White Russian
+    <p>Gin & Tonic</p>
     
-    Whiskey Sour
+    <p>White Russian</p>
     
-    Paloma
+    <p>Whiskey Sour</p>
     
-    Rum Old Fashioned
+    <p>Paloma</p>
     
-    White Lady
+    <p>Rum Old Fashioned</p>
     
-    + three different alcohol free cocktails 
-    What We do
+    <p>White Lady</p>
     
-    Four hours of open bar - at your private event.
+    <p>+ three different alcohol free cocktails </p>
     
-    We will bring everything prepared from back home at Gedulgt. 
+    <Divider/>
+
+    <p className='gedulgtpriv-text-bold'>WHAT WE DO</p>
     
-    Homemade syrups, extractions, freshly squeezed juices, fermentations, fruits & vegetables, and the liquor. 
+    <p>Four hours of open bar - at your private event.</p>
     
-    The bartenders will be at the venue 1 to 2 hours before the open bar begins, to set up our bars, with cocktail glasses, ice cubes, cocktail napkins, bar-equipment, straws and the products. 
+    <p>We will bring everything prepared from back home at Gedulgt. </p>
     
-    We look forward to serve Gedulgt cocktails at your event! 
+    <p>Homemade syrups, extractions, freshly squeezed juices, fermentations, fruits & vegetables, and the liquor. </p>
     
-    SEND REQUESTS AND QUESTIONS REGARDING 
+    <p>The bartenders will be at the venue 1 to 2 hours before the open bar begins, to set up our bars, with cocktail glasses, ice cubes, cocktail napkins, bar-equipment, straws and the products. </p>
     
-    GEDULGT PRIVATE  TO:
+    <p>We look forward to serve Gedulgt cocktails at your event! </p>
     
-    AARHUS@GEDULGT.DK
+    <Divider/>
+
+    <p>SEND REQUESTS AND QUESTIONS REGARDING </p>
     
-    THE FINE PRINT:
+    <p>GEDULGT PRIVATE TO:</p>
     
-    Cancellation of The Gedulgt cocktail catering, must be done at the latest of 14 days before the scheduled event. 
+    <div className='gedulgtpriv-button-container'><a className='gedulgtpriv-button' href='mailto:aarhus@gedulgt.dk'>AARHUS@GEDULGT.DK</a></div>
     
-    Without any timely cancellation, we reserve the right to send an invoice with 25% of the total amount of the arrangement. 
+<Divider/>
+
+    <div className='gedulgtpriv-fine-print'>
+      <p className='gedulgtpriv-text-white'>THE FINE PRINT:</p>
     
-    The prices is per person in Danish currency including vat. 
+    <p>Cancellation of The Gedulgt cocktail catering, must be done at the latest of 14 days before the scheduled event. </p>
+    
+    <p>Without any timely cancellation, we reserve the right to send an invoice with 25% of the total amount of the arrangement. </p>
+    
+    <p>The prices is per person in Danish currency including VAT. </p>
+    </div>
+    <Footer/>
     </div>
   )
 }
