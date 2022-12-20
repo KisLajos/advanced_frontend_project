@@ -8,10 +8,10 @@ export default function Footer() {
   return (
     <footer>
       <img className="divider" src={Divider} />
-      Find us out there
+      <span className="footer-text">Find us out there</span>
       <div className="social-icons">
-        <img src={FacebookIcon} />
-        <img src={InstagramIcon} />
+        <img src={FacebookIcon} /><a href="https://facebook.com/gedulgt">facebook.com/gedulgt</a>
+        <img src={InstagramIcon} /><a href="https://instagram.com/gedulgt">@gedulgtdk</a>
       </div>
       <span className="footnote">2022, Gedulgt, Hajs ApS</span>
     </footer>
