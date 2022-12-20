@@ -34,6 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="menu" element={<Menu />} />
+          <Route path="menu/:barlocation" element={<Menu />} />
           <Route path="info" element={<Info />} />
           <Route path="cocktailworkshops" element={<CocktailWorkshops />} />
           <Route path="gedulgtprivate" element={<GedulgtPrivate />} />
