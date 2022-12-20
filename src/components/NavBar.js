@@ -1,26 +1,19 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import DownArrow from "../assets/down_arrow.svg";
+import { NavLink, useLocation } from "react-router-dom";
 import "./NavBar.css";
-/* import { MdMenu } from "react-icons/md";
-import { MdClose } from "react-icons/md" */;
 
 export default function Nav() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState("closed-nav-height");
+  const { pathname } = useLocation();
 
-  const changeHeight = (toggled) => {
-    if (toggled) {
-      setHeight("opened-nav-height");
-    } else {
-      setHeight("closed-nav-height");
-    }
-  };
+  useEffect(() => {
+    setToggleMenu(false);
+  }, [pathname]);
 
   const toggleNavbar = () => {
     setToggleMenu(!toggleMenu);
-
-    changeHeight(!toggleMenu);
   };
 
   useEffect(() => {
@@ -36,15 +29,24 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav className={"navbar " + height}>
-      <span onClick={toggleNavbar} className="btn">
-        {toggleMenu ? "Close" : "> Gedulgt"}
+    <nav className={"navbar"}>
+      <span onClick={toggleNavbar} className="navbtn">
+        {toggleMenu ? (
+          <div className="togglebtn">
+            Close <img className="closeimg" src={DownArrow} />
+          </div>
+        ) : (
+          <div className="togglebtn">
+            Gedulgt <img className="openimg" src={DownArrow} />
+          </div>
+        )}
       </span>
-
       {(toggleMenu || screenWidth > 768) && (
         <ul className="list">
           <li>
-            <NavLink to="/" end>Home</NavLink>
+            <NavLink to="/" end>
+              Home
+            </NavLink>
           </li>
           <li>
             <NavLink to="/menu">Menu</NavLink>

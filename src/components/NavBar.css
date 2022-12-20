@@ -6,6 +6,7 @@ nav {
     justify-content: center;
     text-transform: uppercase;
     font-size: 1rem;
+    padding-bottom: 4rem;
 }
 
 .list {
@@ -27,7 +28,32 @@ nav {
     color: var(--concretegrey);
 }
 
+.navbtn {
+    display: none;
+    padding: 0.5rem;
+}
+
+.togglebtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.togglebtn .closeimg {
+    transform: scale(0.8) rotate(180deg);
+}
+
+.togglebtn .openimg {
+    transform: scale(0.8);
+}
+
 @media screen and (max-width: 768px) {
+    
+    nav {
+        flex-direction: column;
+    }
+
     .list {
         flex-direction: column;
         height: auto;
@@ -36,7 +62,7 @@ nav {
         width: 100%;
     }
 
-    .btn {
+    .navbtn {
         display: block;
     }
 }
