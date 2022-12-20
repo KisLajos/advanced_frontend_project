@@ -8,3 +8,18 @@
 .divider {
     padding: 2rem;
 }
+
+.info-button {
+    padding: 0.5rem;
+    border: 1px solid var(--concretegrey);
+    border-radius: 0.3rem;
+}
+
+.info a {
+    text-decoration: none;
+    color: var(--concretegrey);
+}
+
+.info a:visited {
+    color: var(--concretegrey);
+}
