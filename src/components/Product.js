@@ -16,7 +16,7 @@ export default function Product({ product }) {
   return (
     <article className="product">
       <div className="product-icon">
-        {product.acf.iconname}
+        <img src={require(`../assets/cocktails/${product.acf.iconname}.svg`)} />
       </div>
       <div className="product-text">
         <h3 className="product-name">{parse(product.title.rendered)}</h3>

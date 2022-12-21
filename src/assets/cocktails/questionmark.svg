@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.183" height="68.138" viewBox="0 0 36.183 68.138">
+  <g id="Questionmark" transform="translate(-938.011 -47.732)">
+    <path id="Path_35" data-name="Path 35" d="M947.647,61.586a22.785,22.785,0,0,1,6.72-5.321c4.259-2.223,9.64-2.765,16.532-.926s8.449,4.217,10.845,9.919-1.263,12.89-1.263,12.89a45.216,45.216,0,0,1-5.217,5.89,48.558,48.558,0,0,1-6.405,4.861l-2.034,8.136h-7.264s-1.816-5.1,0-9.822,8.033-7.671,8.033-7.671,5.008-3.982,4.752-9.53-7.662-6.392-7.662-6.392a29.91,29.91,0,0,0-6.613.845,15.239,15.239,0,0,0-5.687,3.174Z" transform="translate(-9 -6)" fill="none" stroke="#7f8076" stroke-width="1"/>
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(947 101.87)" fill="none" stroke="#7f8076" stroke-width="1">
+      <circle cx="7" cy="7" r="7" stroke="none"/>
+      <circle cx="7" cy="7" r="6.5" fill="none"/>
+    </g>
+  </g>
+</svg>
